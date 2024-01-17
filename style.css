@@ -7,7 +7,6 @@
 }
 
 body {
-  background-color: blueviolet;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -16,4 +15,49 @@ h2 {
   font-family: 'Mukta', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+header {
+  padding: 2em 0;
+}
+
 /* Main Styling */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Page */
+
+.banner {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  height: 500px;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  background-color: pink;
+}
+
+/* Header */
+
+.photo-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.name {
+  color: #fff;
+  font-size: 5rem;
+  position: absolute;
+  bottom: .1em;
+  left: .2em;
+  line-height: 100%;
+  text-shadow: 1px 1px black; 
+}
