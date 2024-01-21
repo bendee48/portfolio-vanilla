@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
 }
 
 h1, 
@@ -15,12 +16,17 @@ h2 {
   font-family: 'Mukta', sans-serif;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 img {
   max-width: 100%;
 }
 
-header {
-  padding: 2em 0;
+header,
+.projects {
+  padding-top: 2em;
 }
 
 /* Main Styling */
@@ -29,6 +35,10 @@ header {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+.vertical-spacing > * {
+  margin-top: 1rem;
 }
 
 /* Page */
@@ -61,3 +71,19 @@ header {
   line-height: 100%;
   text-shadow: 1px 1px black; 
 }
+
+.about-me-title {
+  text-align: center;
+}
+
+.about-me-text {
+  opacity: .6;
+  line-height: 150%;
+}
+
+.devicon-github-original {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+}
+
