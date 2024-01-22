@@ -166,6 +166,7 @@ footer {
     width: 80%;
   }
 
+  /* Header */
   .header-container {
     position: relative;
     margin-top: 2em;
@@ -192,6 +193,18 @@ footer {
     padding: 2em;
     background-color: #fff;
     box-shadow: darkgray 3px 3px 10px;
+  }
+
+  /* Projects */
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
+
+  .projects-title {
+    text-align: left;
   }
 
 }
