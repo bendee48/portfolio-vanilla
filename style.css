@@ -27,6 +27,7 @@ img {
 header,
 .projects {
   padding-top: 2em;
+  padding-bottom: 2em ;
 }
 
 /* Main Styling */
@@ -39,6 +40,11 @@ header,
 
 .vertical-spacing > * {
   margin-top: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  width: 2rem;
 }
 
 /* Page */
@@ -81,9 +87,55 @@ header,
   line-height: 150%;
 }
 
-.devicon-github-original {
-  display: block;
-  font-size: 2rem;
+.about-me-icons {
   text-align: center;
 }
+
+/* Projects */
+
+.projects-container {
+  padding: 1em 0;
+}
+
+.projects-title {
+  text-align: center;
+}
+
+.project-card {
+  box-shadow: darkgray 5px 5px 10px;
+  margin-bottom: 4em;
+}
+
+.project-card-info {
+  opacity: .7;
+  text-align: center;
+  padding: 1em 1em 2em 1em;
+}
+
+.project-card-picture {
+  background-color: pink;
+  height: 15em;
+}
+
+.project-card-title {
+  font-size: 1.7rem;
+}
+
+.project-title-and-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-card-icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1em;
+}
+
+.project-card-text {
+  margin-top: 1em;
+}
+
+
 
