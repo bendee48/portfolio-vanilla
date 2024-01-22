@@ -69,9 +69,13 @@ footer,
   text-align: left;
 }
 
+.photo {
+  box-shadow: rgb(110, 110, 110) 3px 3px 10px;
+}
+
 .name {
   color: #fff;
-  font-size: 5rem;
+  font-size: 4.5rem;
   position: absolute;
   bottom: .1em;
   left: .2em;
@@ -103,7 +107,7 @@ footer,
 }
 
 .project-card {
-  box-shadow: darkgray 5px 5px 10px;
+  box-shadow: darkgray 3px 3px 10px;
   margin-bottom: 4em;
 }
 
@@ -151,6 +155,45 @@ footer {
 .footer-icons {
   margin-top: 2em;
   text-align: center;
+}
+
+/* Media Queries */
+
+/* Tablet */
+
+@media (min-width: 700px) {
+  .container {
+    width: 80%;
+  }
+
+  .header-container {
+    position: relative;
+    margin-top: 2em;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+
+  .photo-container {
+    position: relative;
+    float: left;
+    margin-right: 1em;
+    max-width: 50%;
+    transform: translate(-1em, -1em);
+  }
+
+  .name {
+    top: 10%;
+    left: 80%;
+    white-space: nowrap;
+  }
+
+  .about-me-container {
+    margin-top: 10em;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: darkgray 3px 3px 10px;
+  }
+
 }
 
 
