@@ -25,6 +25,7 @@ img {
 }
 
 header,
+footer,
 .projects {
   padding-top: 2em;
   padding-bottom: 2em ;
@@ -137,5 +138,19 @@ header,
   margin-top: 1em;
 }
 
+/* Footer */
+
+footer {
+  background-color: pink;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-icons {
+  margin-top: 2em;
+  text-align: center;
+}
 
 
