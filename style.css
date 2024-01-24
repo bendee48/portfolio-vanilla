@@ -62,6 +62,10 @@ footer,
 
 /* Header */
 
+.header-container {
+  border: 1px solid red;
+}
+
 .photo-container {
   position: relative;
   width: 90%;
@@ -177,9 +181,8 @@ footer {
   .photo-container {
     position: relative;
     float: left;
-    margin-right: 1em;
     max-width: 50%;
-    transform: translate(-1em, -1em);
+    transform: translate(-1.5em, 0em);
   }
 
   .name {
@@ -197,6 +200,10 @@ footer {
 
   /* Projects */
 
+  .projects {
+    clear: both;
+  }
+
   .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -207,6 +214,42 @@ footer {
     text-align: left;
   }
 
+}
+
+/* Desktop */
+
+@media(min-width: 1024px) {
+  .header-container {
+    display: flex;
+  }
+
+  .header-container > * {
+    flex: 1;
+  }
+
+  .name {
+    bottom: .1em;
+    left: .2em;
+    top: auto;
+    white-space: wrap;
+  }
+
+  .photo-container {
+    transform: none;
+    float: none;
+  }
+
+  .about-me-container {
+    margin: 0;
+  }
+
+  .about-me-title {
+    text-align: left;
+  }
+
+  .about-me-icons {
+    text-align: right;
+  }
 }
 
 
