@@ -9,6 +9,7 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.2rem;
+  background-color: #FFF6F0;
 }
 
 h1, 
@@ -34,6 +35,11 @@ footer,
 
 /* Main Styling */
 
+:root {
+  --violet: #C98BB9;
+  --pink: #FAE3E3;
+}
+
 .container {
   max-width: 1200px;
   width: 90%;
@@ -58,7 +64,7 @@ footer,
   height: 500px;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  background-color: pink;
+  background-color: var(--violet);
 }
 
 /* Header */
@@ -71,7 +77,8 @@ footer,
 }
 
 .photo {
-  box-shadow: rgb(110, 110, 110) 3px 3px 10px;
+  box-shadow: #000 3px 3px 15px 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .name {
@@ -110,6 +117,7 @@ footer,
 .project-card {
   box-shadow: darkgray 3px 3px 10px;
   margin-bottom: 4em;
+  background-color: #fff;
 }
 
 .project-card-info {
@@ -119,7 +127,7 @@ footer,
 }
 
 .project-card-picture {
-  background-color: pink;
+  background-color: var(--pink);
   height: 15em;
 }
 
@@ -146,7 +154,7 @@ footer,
 /* Footer */
 
 footer {
-  background-color: pink;
+  background-color: var(--violet);
   text-align: center;
 }
 
@@ -193,7 +201,8 @@ footer {
     margin-top: 10em;
     padding: 3em;
     background-color: #fff;
-    box-shadow: darkgray 3px 3px 10px;
+    box-shadow: #161616 3px 3px 15px 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   }
 
   /* Projects */
