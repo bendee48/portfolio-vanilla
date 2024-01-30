@@ -131,6 +131,10 @@ footer,
   height: 15em;
 }
 
+.project-image {
+  object-fit: cover;
+}
+
 .project-card-title {
   font-size: 1.7rem;
 }
