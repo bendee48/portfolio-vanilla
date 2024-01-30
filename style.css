@@ -22,8 +22,26 @@ h1 {
 }
 
 img {
+  /* Ensure images fill their container */
   max-width: 100%;
   height: 100%;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Main Styling */
+
+:root {
+  --violet: #C98BB9;
+  --pink: #FAE3E3;
 }
 
 header,
@@ -31,13 +49,6 @@ footer,
 .projects {
   padding-top: 2em;
   padding-bottom: 2em ;
-}
-
-/* Main Styling */
-
-:root {
-  --violet: #C98BB9;
-  --pink: #FAE3E3;
 }
 
 .container {
@@ -142,12 +153,13 @@ footer,
 .project-title-and-icons {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .project-card-icons {
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: start;
   gap: 1em;
 }
 
