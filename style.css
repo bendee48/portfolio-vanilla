@@ -46,9 +46,10 @@ a:hover {
 
 header,
 footer,
-.projects {
-  padding-top: 2em;
-  padding-bottom: 2em ;
+.projects,
+.skills {
+  padding-top: 3em;
+  padding-bottom: 3em ;
 }
 
 .container {
@@ -112,7 +113,26 @@ footer,
 }
 
 .about-me-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* Skills */
+
+.skills-title {
   text-align: center;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.skill-icon {
+  font-size: 3rem;
 }
 
 /* Projects */
