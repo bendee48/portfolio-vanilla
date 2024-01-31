@@ -49,7 +49,7 @@ footer,
 .projects,
 .skills {
   padding-top: 3em;
-  padding-bottom: 3em ;
+  padding-bottom: 3em;
 }
 
 .container {
@@ -151,12 +151,6 @@ footer,
   background-color: #fff;
 }
 
-.project-card-info {
-  opacity: .7;
-  text-align: center;
-  padding: 1em 1em 2em 1em;
-}
-
 .project-card-picture {
   background-color: var(--pink);
   height: 15em;
@@ -164,6 +158,12 @@ footer,
 
 .project-image {
   object-fit: cover;
+}
+
+.project-card-info {
+  opacity: .7;
+  text-align: center;
+  padding: 1em 1em 1em 1em;
 }
 
 .project-card-title {
@@ -185,6 +185,13 @@ footer,
 
 .project-card-text {
   margin-top: 1em;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+  padding: 0 1em 1em 1em;
 }
 
 /* Footer */
