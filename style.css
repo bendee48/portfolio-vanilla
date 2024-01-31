@@ -67,6 +67,13 @@ footer,
   width: 2rem;
 }
 
+.btn {
+  display: inline-block;
+  padding: .5em 2em;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+
 /* Page */
 
 .banner {
@@ -206,8 +213,19 @@ footer {
 }
 
 .footer-icons {
-  margin-top: 2em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.mail-me {
+  color: #fff;
+}
+
+.mail-me.btn:active {
+  color: black;
+  background-color: #fff;
 }
 
 /* Media Queries */
