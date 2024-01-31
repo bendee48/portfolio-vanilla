@@ -64,7 +64,11 @@ footer,
 
 .icon {
   font-size: 2rem;
-  width: 2rem;
+  width: 2.1rem;
+}
+
+.icon:hover {
+  opacity: .7;
 }
 
 .btn {
@@ -125,6 +129,11 @@ footer,
   gap: 1em;
 }
 
+.about-me-icons .icon:hover {
+  opacity: .7;
+  color: var(--violet);
+}
+
 /* Skills */
 
 .skills-title {
@@ -156,15 +165,18 @@ footer,
   box-shadow: darkgray 3px 3px 10px;
   margin-bottom: 4em;
   background-color: #fff;
+  border-radius: 1em;
 }
 
 .project-card-picture {
   background-color: var(--pink);
   height: 15em;
+  border-radius: 1em 1em 0 0;
 }
 
 .project-image {
   object-fit: cover;
+  border-radius: 1em 1em 0 0;
 }
 
 .project-card-info {
@@ -188,6 +200,10 @@ footer,
   justify-content: end;
   align-items: start;
   gap: 1em;
+}
+
+.project-card-icons .icon:hover {
+  color: inherit;
 }
 
 .project-card-text {
@@ -225,9 +241,10 @@ footer {
   color: #fff;
 }
 
-.mail-me.btn:active {
+.mail-me.btn:hover {
   color: black;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .made-by {
@@ -295,6 +312,10 @@ footer {
 
 @media(min-width: 1024px) {
   /* Header */
+
+  a:hover {
+    text-decoration: none;
+  }
 
   .header-container {
     display: flex;
