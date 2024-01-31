@@ -206,13 +206,20 @@
     <div class="container vertical-spacing">
       <h1 class="footer-title">Contact me</h1>
       <a class="mail-me btn" href="mailto:daniels.ben.tech@gmail.com">Mail me</a>
-      <p>London, UK</p>
+      <p class="location">London, UK</p>
       <div class="footer-icons">
         <a href="https://github.com/bendee48"><i class="devicon-github-original icon"></i></a>
         <a href="https://rubygems.org/profiles/bendee"><i class="devicon-ruby-plain icon"></i></a>
         <a href="https://www.npmjs.com/~bendee48"><i class="devicon-npm-original-wordmark icon"></i></a>
       </div>
+      <p class="made-by">Made by Ben Daniels - <span class="date"></span></p>
     </div>
   </footer>
+
+  <script>
+    const dateElement = document.querySelector('.date');
+    const currentDate = new Date();
+    dateElement.textContent = currentDate.getFullYear();
+  </script>
 </body>
 </html>
