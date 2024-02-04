@@ -352,6 +352,36 @@ footer {
     text-align: right;
   }
 
+  /* Skills */
+
+  .skill-icon[data-tool-tip] {
+    position: relative;
+    cursor: help;
+  }
+
+  .skill-icon[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    position: absolute;
+    display: inline-block;
+    color: #323232;
+    font-size: 1rem;
+    white-space: nowrap;
+    padding: .2em .5em .3em .5em;
+    border-radius: 5px;
+    bottom: 50%;
+    left: 50%;
+    background-color: #C98BB9;
+    transform: scale(0);
+    transition: 
+      transform ease-in 100ms, 
+      bottom ease-in 100ms;
+  }
+
+  .skill-icon[data-tool-tip]:hover::after {
+    transform: scale(1);
+    bottom: 110%;
+  }
+
   /* Projects */
 
   .projects-container {
