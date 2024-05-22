@@ -24,7 +24,7 @@ h1 {
 img {
   /* Ensure images fill their container */
   max-width: 100%;
-  height: auto;
+  height: auto; /* keep at auto for safari */
 }
 
 a {
@@ -177,6 +177,7 @@ footer,
 }
 
 .project-image {
+  height: 100%;
   object-fit: cover;
   border-radius: 1em 1em 0 0;
 }
